@@ -19,3 +19,4 @@
   Failed to load resource: the server responded with a status of 404 ()
   ```
   en referencia al archivo json que carga los datos.
+  Tal vez sea porque al intentar index.html utilizar el archivo de cerealsrealdata.json, este aún no se ha creado y por ello no aparece.
