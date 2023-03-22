@@ -11,5 +11,11 @@
 ## Progreso tercer spring
   
   Durante este período se cambió la idea de como hacer el calculo matricial y mediante el uso de python, guardando ambos archivos inicialmente en la carpeta del proyecto, es posible multiplicarlos y generar el nuevo archivo json con los datos para el index.html con el fin de mostrarlos.
-    <sub>Problema de visualización en github pages</sub>
-      por algún motivo no es posible ver el resultado de la gráfica al mostrarlo en github pages, en la consola aparecer el siguiente error : "Failed to load resource: the server responded with a status of 404 ()" en referencia al archivo json que carga los datos.
+  
+**Problema de visualización en _github pages_**
+
+  por algún motivo no es posible ver el resultado de la gráfica al mostrarlo en github pages, en la consola aparecer el siguiente error : 
+  ```
+  Failed to load resource: the server responded with a status of 404 ()
+  ```
+  en referencia al archivo json que carga los datos.
