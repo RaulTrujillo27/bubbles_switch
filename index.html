@@ -6,25 +6,45 @@
     <script src="https://unpkg.com/aframe-environment-component@1.0.0/dist/aframe-environment-component.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.14.5/xlsx.full.min.js"></script>
+    <script src="switch.js"></script>
   
   </head>  
   <body>    
     
     <a-scene>
-        <a-entity id="cerealesrealdata" babia-queryjson="url:cerealesrealdata.json;"></a-entity>
+        <a-entity id="cerealesrealdata" babia-queryjson="url:archivosjson/cerealesrealdata.json;"></a-entity>
+        <a-entity id="olivesrealdata" babia-queryjson="url:archivosjson/olivesrealdata.json;"></a-entity>
+        <a-entity id="parkinsonrealdata" babia-queryjson="url:archivosjson/parkinsondata.json;"></a-entity>
         <!-- Environment -->
          <a-entity environment >
             
-            <!-- Bubbles datacereals -->
-            <a-entity id="bubblesrealdatacereales" babia-bubbles="legend: true; palette: ubuntu; radiusMax: 2.5; heightMax: 30; from: cerealesrealdata;
-            x_axis: D1; z_axis: D2; height: D3; radius: D4" position="-20 1 -40" rotation="0 0 0" scale="0.125 0.125 0.125">   
+            <!-- Bubbles data -->
+            <a-box position="0 0 -10" color="grey" rotation="0 0 0" depth="50" width="50" >
+              <a-entity id="bubblesrealdata" babia-bubbles="legend: true; palette: flat;  radiusMax: 2.5; heightMax: 30; from: cerealesrealdata;
+                x_axis: D1; z_axis: D2; height: D3; radius: D4" position="-20 7.5 -20" rotation="0 0 0"  scale="0.1 0.1 0.1">   
+              </a-entity>
+            </a-box> 
+            
+            <a-entity id="piedescription" position="5 1 16" rotation="-30 0 0">
+              <a-box color="black" height="2" width="2" depth="0.1" position="0 0 0" material="" geometry=""></a-box>
+              <a-box color="white" height="1.8" width="1.8" depth="0.05" position="0 0 0.05" material="" geometry=""></a-box>
+                
             </a-entity>
-
+            <!-- switch -->
+            <a-box
+              position="-5 0.625 14"
+              color="#6173F4"
+              rotation="0 0 0"
+              depth="1"
+              change-data=""
+              >
+            </a-box>
+            
             <!-- Light -->
             <a-light type="point" intensity="1" position="-10 20 30"></a-light>
         
             <!-- Camera -->
-            <a-entity movement-controls="fly: true" position="0 5 20">
+            <a-entity movement-controls="fly: true" position="0 7.5 25">
                 <a-entity camera position="0 0 0" look-controls></a-entity>
                 <a-entity cursor="rayOrigin:mouse"></a-entity>
                 <a-entity laser-controls="hand: right"></a-entity>

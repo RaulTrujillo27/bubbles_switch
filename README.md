@@ -20,3 +20,11 @@
   ```
   en referencia al archivo json que carga los datos.
   Tal vez sea porque al intentar index.html utilizar el archivo de cerealsrealdata.json, este aún no se ha creado y por ello no aparece.
+
+## Progreso cuarto spring
+
+  Se ha creado un nuevo repositorio, la idea de representación de los datos ha avanzado, esta vez creando una caja a la que se le ha aplicado un evento para que al pulsarla, 
+  pasemos al siguiente archivo de datos, con el fin de poder visualizar todos y cada uno de los datos.
+
+  Encuentro problemas de visualizacion de datos a la hora de poder ver una cantidad muy grande de burbujas ya que cada vez crece mas y mas el grafico, haciendose incomodo con un tamaño superior a 75, por eso mis muestras son de ese tamaño.
+  
